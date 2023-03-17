@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { db } from './firebaseConnection';
-import { addDoc, collection, doc, setDoc, getDoc, getDocs } from 'firebase/firestore';
+import { addDoc, collection, doc, setDoc, getDoc, getDocs, updateDoc } from 'firebase/firestore';
 import { toast, ToastContainer } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
 import './App.css';
@@ -74,12 +74,16 @@ function App() {
       setList(lista);
     })
     .catch(()=>{
-
+      alert('aaa')
     })
 
 
   }
 
+
+  function handleUpdate(){
+    await 
+  }
 
   return (
     <div className="App">
